@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Galeria zdjęć</title>
-    <link rel="stylesheet" href="index4.css" />
+    <title>Układ Divów</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav>
@@ -13,83 +13,86 @@
       <a href="index3.html">strona3</a>
       <a href="index4.html">strona4</a>
     </nav>
-
-    <div class="gallery">
-      <div class="gallery-row">
-        <div class="gallery-item">
-          <img
-            src="https://img.freepik.com/free-photo/majestic-mountain-peak-tranquil-winter-landscape-generated-by-ai_188544-15662.jpg"
-            alt="Zdjęcie 1"
-          />
-          <p>Zdjęcie 1</p>
-        </div>
-
-        <div class="gallery-item">
-          <img
-            src="https://img.freepik.com/free-photo/majestic-mountain-peak-tranquil-winter-landscape-generated-by-ai_188544-15662.jpg"
-            alt="Zdjęcie 2"
-          />
-          <p>Zdjęcie 2</p>
-        </div>
-
-        <div class="gallery-item">
-          <img
-            src="https://img.freepik.com/free-photo/majestic-mountain-peak-tranquil-winter-landscape-generated-by-ai_188544-15662.jpg"
-            alt="Zdjęcie 3"
-          />
-          <p>Zdjęcie 3</p>
-        </div>
+    <form>
+      <div class="form-group">
+        <label for="imie">Imię:</label>
+        <input type="text" name="imie" id="imie" placeholder="Imię" />
       </div>
-      <div class="gallery-row">
-        <div class="gallery-item">
-          <img
-            src="https://img.freepik.com/free-photo/majestic-mountain-peak-tranquil-winter-landscape-generated-by-ai_188544-15662.jpg"
-            alt="Zdjęcie 4"
-          />
-          <p>Zdjęcie 4</p>
-        </div>
-
-        <div class="gallery-item">
-          <img
-            src="https://img.freepik.com/free-photo/majestic-mountain-peak-tranquil-winter-landscape-generated-by-ai_188544-15662.jpg"
-            alt="Zdjęcie 5"
-          />
-          <p>Zdjęcie 5</p>
-        </div>
-
-        <div class="gallery-item">
-          <img
-            src="https://img.freepik.com/free-photo/majestic-mountain-peak-tranquil-winter-landscape-generated-by-ai_188544-15662.jpg"
-            alt="Zdjęcie 6"
-          />
-          <p>Zdjęcie 6</p>
-        </div>
+      <div class="form-group">
+        <label for="nazwisko">Nazwisko:</label>
+        <input
+          type="text"
+          name="nazwisko"
+          id="nazwisko"
+          placeholder="Nazwisko"
+        />
       </div>
-      <div class="gallery-row">
-        <div class="gallery-item">
-          <img
-            src="https://img.freepik.com/free-photo/majestic-mountain-peak-tranquil-winter-landscape-generated-by-ai_188544-15662.jpg"
-            alt="Zdjęcie 7"
-          />
-          <p>Zdjęcie 7</p>
-        </div>
-
-        <div class="gallery-item">
-          <img
-            src="https://img.freepik.com/free-photo/majestic-mountain-peak-tranquil-winter-landscape-generated-by-ai_188544-15662.jpg"
-            alt="Zdjęcie 8"
-          />
-          <p>Zdjęcie 8</p>
-        </div>
-
-        <div class="gallery-item">
-          <img
-            src="https://img.freepik.com/free-photo/majestic-mountain-peak-tranquil-winter-landscape-generated-by-ai_188544-15662.jpg"
-            alt="Zdjęcie 9"
-          />
-          <p>Zdjęcie 9</p>
-        </div>
+      <div class="form-group">
+        <label for="adres">Ulica:</label>
+        <input type="text" name="ulica" id="adres" placeholder="Ulica" />
       </div>
-    </div>
+      <div class="form-group">
+        <label for="drzwi">Drzwi:</label>
+        <input type="text" name="drzwi" id="drzwi" placeholder="Drzwi" />
+      </div>
+      <div class="form-group">
+        <label for="mieszkanie">Mieszkanie:</label>
+        <input
+          type="text"
+          name="mieszkanie"
+          id="mieszkanie"
+          placeholder="Mieszkanie"
+        />
+      </div>
+      <div class="form-group">
+        <label for="miasto">Miasto:</label>
+        <input type="text" name="miasto" id="miasto" placeholder="Miasto" />
+      </div>
+      <div class="form-group">
+        <label for="d_urodzenia">Data urodzenia:</label>
+        <input type="date" name="urodzenia" id="d_urodzenia" />
+      </div>
+      <div class="form-group">
+        <label for="telefon">Numer telefonu:</label>
+        <input
+          type="number"
+          name="telefon"
+          id="telefon"
+          placeholder="Numer telefonu"
+        />
+      </div>
+      <div class="form-group">
+        <label for="email">E-Mail:</label>
+        <input type="email" name="email" id="email" placeholder="E-Mail" />
+      </div>
+      <div class="form-group">
+        <label for="plec">Płeć:</label>
+        <select name="plec" id="plec" title="Płeć">
+          <option value="mezczyzna">Mężczyzna</option>
+          <option value="kobieta">Kobieta</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="dl">Prawo jazdy:</label>
+        <select name="dl" id="dl" title="Prawo jazdy">
+          <option>Tak</option>
+          <option>Nie</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="haslo">Hasło:</label>
+        <input type="password" name="haslo" id="haslo" placeholder="Hasło" />
+      </div>
+      <div class="form-group">
+        <label for="uwagi">Uwagi:</label>
+        <textarea
+          name="uwagi"
+          id="uwagi"
+          cols="30"
+          rows="10"
+          placeholder="Uwagi"
+        ></textarea>
+      </div>
+    </form>
   </body>
 </html>
